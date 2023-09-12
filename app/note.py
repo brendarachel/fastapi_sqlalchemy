@@ -5,7 +5,6 @@ from .database import get_db
 
 router = APIRouter()
 
-
 @router.get('/')
 def get_notes(db: Session = Depends(get_db), limit: int = 10, page: int = 1, search: str = ''):
     skip = (page - 1) * limit

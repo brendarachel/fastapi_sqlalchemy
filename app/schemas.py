@@ -2,7 +2,6 @@ from datetime import datetime
 from typing import List
 from pydantic import BaseModel
 
-
 class NoteBaseSchema(BaseModel):
     id: str | None = None
     title: str

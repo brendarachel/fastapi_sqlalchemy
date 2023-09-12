@@ -6,3 +6,4 @@ dev-down:
 
 server:
 	uvicorn app.main:app --reload
+	
