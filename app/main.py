@@ -19,9 +19,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
 app.include_router(note.router, tags=['Notes'], prefix='/api/notes')
-
 
 @app.get("/api/healthchecker")
 def root():
